@@ -97,8 +97,14 @@ foreach($EMP_result as $EMP_lineManager)
 		<!-- Skin Color -->
 		<link rel="stylesheet" href="css/<?php echo $EMP_lineManager['color']?>.css" id="color-skins"/>
 		<!-- End files CSS -->
+
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="jquery.tagcloud.js"></script>
+		<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
 	</head>
 	<body>
+
 		<!-- Start Preloader -->
 		<div class="animationload">
 			<div class="loader"> <!-- TODO: DEFINIR/CRIAR UM NOVO LOADER(GIF) !!!! -->
@@ -417,6 +423,47 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 								</div>
 							</div>
 						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-6"></div>
+					<div class="col-md-6 col-sm-6">
+						<div id="tagcloud">
+							<a href="#" rel="8">Comunidade</a>
+							<a href="#" rel="2">ipsum</a>
+							<a href="#" rel="3">dolor</a>
+							<a href="#" rel="4">sit</a>
+							<a href="#" rel="5">amet,</a>
+							<a href="#" rel="6">consectetur</a>
+							<a href="#" rel="7">adipisicing</a>
+							<a href="#" rel="8">elit,</a>
+							<a href="#" rel="5">sed</a>
+							<a href="#" rel="7">do</a>
+							<a href="#" rel="3">eiusmod</a>
+							<a href="#" rel="1">tempor</a>
+							<a href="#" rel="12">incididunt</a>
+							<a href="#" rel="8">Comunidade</a>
+							<a href="#" rel="2">ipsum</a>
+							<a href="#" rel="3">dolor</a>
+							<a href="#" rel="4">sit</a>
+							<a href="#" rel="5">amet,</a>
+							<a href="#" rel="6">consectetur</a>
+							<a href="#" rel="7">adipisicing</a>
+							<a href="#" rel="8">elit,</a>
+							<a href="#" rel="5">sed</a>
+							<a href="#" rel="7">do</a>
+							<a href="#" rel="3">eiusmod</a>
+							<a href="#" rel="1">tempor</a>
+							<a href="#" rel="12">incididunt</a>
+
+						  </div>
+					
+					<script>
+					$("#tagcloud a").tagcloud({
+						size: {start: 18, end: 48, unit: "px"},
+						color: {start: '#3498DB', end: '#46CFB0'}
+					});
+					</script>
 					</div>
 				</div>
 			</section>

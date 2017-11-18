@@ -2002,3 +2002,7 @@ border: 0 !important;
 .step-video {
 	overflow:hidden;
 }	
+
+#tagcloud{
+	margin-bottom: 25px;
+}
