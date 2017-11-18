@@ -521,18 +521,19 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 								<img src="img/evento1.jpg" width="270" height="270" class="img-responsive center-text" alt="">
 								<!-- Title -->
 								<h4>
-									Evento1
+									ENCONTRO DE CRIANÇAS
 								</h4>
 								<h5>
-									São Leopoldo
+									Brincadeiras Livres
 								</h5>
 								<p>
-									rua nao sei oq<br>Fone: (51) 99999-9999.
+									Sábados 10h - 12h
 								</p>
 								<!-- maps icon -->
 								<ul class="list-inline">
 									<li>
-										<a href="https://www.google.com.br/maps/place/Av.+Jo%C3%A3o+Wallig,+1800+-+Passo+d'Areia,+Porto+Alegre+-+RS/@-30.0289036,-51.163953,16z/data=!4m2!3m1!1s0x95197799f080e533:0xbe6f3dcda1b17029"><i class="fa fa-map-marker"></i></a>
+										<!-- <a href="https://www.google.com.br/maps/place/Av.+Jo%C3%A3o+Wallig,+1800+-+Passo+d'Areia,+Porto+Alegre+-+RS/@-30.0289036,-51.163953,16z/data=!4m2!3m1!1s0x95197799f080e533:0xbe6f3dcda1b17029"><i class="fa fa-map-marker"></i></a>
+										-->
 									</li>
 								</ul>
 							</div>
@@ -544,18 +545,19 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 								<img src="img/evento2.jpg" width="270" height="270" class="img-responsive center-text" alt="">
 								<!-- Title -->
 								<h4>
-									Evento2
+									REFORÇO ESCOLAR
 								</h4>
 								<h5>
-									São Leopoldo
+									
 								</h5>
 								<p>
-									rua nao sei oq<br>Fone: (51) 99999-9999.
+									Terças-Feiras 09h - 11h
 								</p>
 								<!-- maps icon -->
 								<ul class="list-inline">
 									<li>
-										<a href="https://www.google.com.br/maps/place/Av.+Praia+de+Belas,+1181+-+Praia+de+Belas,+Porto+Alegre+-+RS,+90110-001/@-30.0495266,-51.2287527,17z/data=!3m1!4b1!4m2!3m1!1s0x951978fa5dcb370d:0x6a27bece54fb0b63"><i class="fa fa-map-marker"></i></a>
+										<!-- <a href="https://www.google.com.br/maps/place/Av.+Praia+de+Belas,+1181+-+Praia+de+Belas,+Porto+Alegre+-+RS,+90110-001/@-30.0495266,-51.2287527,17z/data=!3m1!4b1!4m2!3m1!1s0x951978fa5dcb370d:0x6a27bece54fb0b63"><i class="fa fa-map-marker"></i></a>
+										-->
 									</li>
 							</div>
 						</div>
@@ -566,18 +568,19 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 								<img src="img/evento3.jpg" width="270" height="270" class="img-responsive center-text" alt="">
 								<!-- Title -->
 								<h4>
-									Evento3
+									MULHERES SONHADORAS
 								</h4>
 								<h5>
-									São Leopoldo
+									Artesanato e partilha de vida.
 								</h5>
 								<p>
-									rua nao sei oq<br>Fone: (51) 99999-9999.
+									Sextas-Feiras 14h
 								</p>
 								<!-- maps icon -->
 								<ul class="list-inline">
 									<li>
-										<a href="https://www.google.com.br/maps/place/Cal%C3%A7ados+Crist%C3%B3foli+-+Store+%26+Outlet/@-29.673502,-51.142505,17z/data=!4m6!1m3!3m2!1s0x9519437403d16037:0xd7449dbb2c266e85!2sCal%C3%A7ados+Crist%C3%B3foli+-+Store+%26+Outlet!3m1!1s0x9519437403d16037:0xd7449dbb2c266e85"><i class="fa fa-map-marker"></i></a>
+										<!-- <a href="https://www.google.com.br/maps/place/Cal%C3%A7ados+Crist%C3%B3foli+-+Store+%26+Outlet/@-29.673502,-51.142505,17z/data=!4m6!1m3!3m2!1s0x9519437403d16037:0xd7449dbb2c266e85!2sCal%C3%A7ados+Crist%C3%B3foli+-+Store+%26+Outlet!3m1!1s0x9519437403d16037:0xd7449dbb2c266e85"><i class="fa fa-map-marker"></i></a>
+										-->
 									</li>
 								</ul>
 							</div>
@@ -589,18 +592,19 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 								<img src="img/evento4.jpg" width="270" height="270" class="img-responsive center-text" alt="">
 								<!-- Title -->
 								<h4>
-									Evento4
+									ALFEBETIZAÇÃO DOS ADULTOS
 								</h4>
 								<h5>
-									São Leopoldo
+									Ministrada por estagiários da Unisinos Educas
 								</h5>
 								<p>
-									rua nao sei oq<br>Fone: (51) 99999-9999.
+									Sextas-Feiras 9h
 								</p>
 								<!-- maps icon -->
 								<ul class="list-inline">
 									<li>
-										<a href="https://www.google.com.br/maps/place/Av.+Borges+de+Medeiros,+2540,+Gramado+-+RS,+95670-000/@-29.3801897,-50.8726438,17z/data=!3m1!4b1!4m2!3m1!1s0x951932437c37ee8f:0xafe2b080d3468e57"><i class="fa fa-map-marker"></i></a>
+										<!-- <a href="https://www.google.com.br/maps/place/Av.+Borges+de+Medeiros,+2540,+Gramado+-+RS,+95670-000/@-29.3801897,-50.8726438,17z/data=!3m1!4b1!4m2!3m1!1s0x951932437c37ee8f:0xafe2b080d3468e57"><i class="fa fa-map-marker"></i></a>
+										-->
 									</li>
 								</ul>
 							</div>
@@ -612,18 +616,19 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 								<img src="img/evento5.jpg" width="270" height="270" class="img-responsive center-text" alt="">
 								<!-- Title -->
 								<h4>
-									Evento5
+									MENINAS SONHADORAS
 								</h4>
 								<h5>
-									São Leopoldo
+									Momento das adolescentes
 								</h5>
 								<p>
-									rua nao sei oq<br>Fone: (51) 99999-9999.
+									Sábados 13h - 15h
 								</p>
 								<!-- maps icon -->
 								<ul class="list-inline">
 									<li>
-										<a href="https://www.google.com.br/maps/place/Av.+Borges+de+Medeiros,+2540,+Gramado+-+RS,+95670-000/@-29.3801897,-50.8726438,17z/data=!3m1!4b1!4m2!3m1!1s0x951932437c37ee8f:0xafe2b080d3468e57"><i class="fa fa-map-marker"></i></a>
+										<!-- <a href="https://www.google.com.br/maps/place/Av.+Borges+de+Medeiros,+2540,+Gramado+-+RS,+95670-000/@-29.3801897,-50.8726438,17z/data=!3m1!4b1!4m2!3m1!1s0x951932437c37ee8f:0xafe2b080d3468e57"><i class="fa fa-map-marker"></i></a>
+										-->
 									</li>
 								</ul>
 							</div>
