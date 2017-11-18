@@ -2008,3 +2008,12 @@ border: 0 !important;
 #tagcloud{
 	margin-bottom: 35px;
 }
+
+.events-slots{
+	width: 20%;
+}
+
+.row-events{
+	width: 1300px;
+	margin-left: -40px;
+}
