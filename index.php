@@ -429,32 +429,32 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 					<div class="col-md-3 col-sm-6"></div>
 					<div class="col-md-6 col-sm-6">
 						<div id="tagcloud">
+							<a href="#" rel="8">Cultura</a>
+							<a href="#" rel="2">Educação</a>
+							<a href="#" rel="3">Sociedade</a>
+							<a href="#" rel="4">Esperança</a>
+							<a href="#" rel="5">Amizade</a>
+							<a href="#" rel="6">Solidariedade</a>
+							<a href="#" rel="7">Acompanhamento</a>
+							<a href="#" rel="8">Presença</a>
+							<a href="#" rel="5">Construção</a>
+							<a href="#" rel="7">Cidadania</a>
+							<a href="#" rel="3">Vida</a>
+							<a href="#" rel="1">Recreatividade</a>
+							<a href="#" rel="12">Celebração</a>
 							<a href="#" rel="8">Comunidade</a>
-							<a href="#" rel="2">ipsum</a>
-							<a href="#" rel="3">dolor</a>
-							<a href="#" rel="4">sit</a>
-							<a href="#" rel="5">amet,</a>
-							<a href="#" rel="6">consectetur</a>
-							<a href="#" rel="7">adipisicing</a>
-							<a href="#" rel="8">elit,</a>
-							<a href="#" rel="5">sed</a>
-							<a href="#" rel="7">do</a>
-							<a href="#" rel="3">eiusmod</a>
-							<a href="#" rel="1">tempor</a>
-							<a href="#" rel="12">incididunt</a>
-							<a href="#" rel="8">Comunidade</a>
-							<a href="#" rel="2">ipsum</a>
-							<a href="#" rel="3">dolor</a>
-							<a href="#" rel="4">sit</a>
-							<a href="#" rel="5">amet,</a>
-							<a href="#" rel="6">consectetur</a>
-							<a href="#" rel="7">adipisicing</a>
-							<a href="#" rel="8">elit,</a>
-							<a href="#" rel="5">sed</a>
-							<a href="#" rel="7">do</a>
-							<a href="#" rel="3">eiusmod</a>
-							<a href="#" rel="1">tempor</a>
-							<a href="#" rel="12">incididunt</a>
+							<a href="#" rel="2">Familiaridade</a>
+							<a href="#" rel="3">Conhecimento</a>
+							<a href="#" rel="4">Empoderamento</a>
+							<a href="#" rel="5">Protagonismo</a>
+							<a href="#" rel="6">Benefícios</a>
+							<a href="#" rel="7">Pessoas</a>
+							<a href="#" rel="8">Participação</a>
+							<a href="#" rel="5">Taabalho</a>
+							<a href="#" rel="7">Transparência</a>
+							<a href="#" rel="3">Brincadeiras</a>
+							<a href="#" rel="1">Cooperação</a>
+							<a href="#" rel="12">Jogos</a>
 						  </div>
 					<script>
 					$("#tagcloud a").tagcloud({
@@ -571,7 +571,7 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 									MULHERES SONHADORAS
 								</h4>
 								<h5>
-									Artesanato e partilha de vida.
+									Artesanato e partilha de vida
 								</h5>
 								<p>
 									Sextas-Feiras 14h
