@@ -440,17 +440,17 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 							<a href="#" rel="5">sed</a>
 							<a href="#" rel="7">do</a>
 							<a href="#" rel="3">eiusmod</a>
-							<a href="#" rel="1">tempor</a>
-							<a href="#" rel="12">incididunt</a>
+							<a href="#" rel="1">Colaborar</a>
+							<a href="#" rel="12">Cooperar</a>
 							<a href="#" rel="8">Comunidade</a>
 							<a href="#" rel="2">ipsum</a>
 							<a href="#" rel="3">dolor</a>
 							<a href="#" rel="4">sit</a>
 							<a href="#" rel="5">amet,</a>
-							<a href="#" rel="6">consectetur</a>
+							<a href="#" rel="6">Solidariedade</a>
 							<a href="#" rel="7">adipisicing</a>
 							<a href="#" rel="8">elit,</a>
-							<a href="#" rel="5">sed</a>
+							<a href="#" rel="5">Educação</a>
 							<a href="#" rel="7">do</a>
 							<a href="#" rel="3">eiusmod</a>
 							<a href="#" rel="1">tempor</a>
@@ -751,6 +751,7 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 								</div>
 								<div class="col-md-12 text-center">
 								<button type="submit" class="btn btn-primary btn-lg btn-responsive"><?php echo BUTTON_CONTACT ?> <i class="fa fa-rocket"></i></button>
+								<a type="button" href="https://www.aquirs.com.br/telefones-uteis-sao-leopoldo/" class="btn btn-primary btn-lg btn-responsive">Telefones Úteis <i class="fa fa-rocket"></i></a>
 								</div>
 							</fieldset>
 						</form>
