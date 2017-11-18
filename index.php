@@ -513,12 +513,12 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 						<i class="fa fa-street-view"></i>
 						</h2>
 					</div>
-					<div class="row">
+					<div class="row row-events">
 						<!-- store 1 -->
-						<div class="col-md-3 col-sm-3 animated fadeInUp visible" data-animation="fadeInUp" data-animation-delay="300">
+						<div class="col-md-3 col-sm-3 animated fadeInUp visible events-slots" data-animation="fadeInUp" data-animation-delay="300">
 							<div class="team-box text-center">
 								<!-- img -->
-								<img src="img/exemplo.jpg" width="270" height="270" class="img-responsive center-text" alt="">
+								<img src="img/evento1.jpg" width="270" height="270" class="img-responsive center-text" alt="">
 								<!-- Title -->
 								<h4>
 									Evento1
@@ -538,10 +538,10 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 							</div>
 						</div>
 						<!-- store 2 -->
-						<div class="col-md-3 col-sm-3  animated fadeInUp visible" data-animation="fadeInUp" data-animation-delay="400">
+						<div class="col-md-3 col-sm-3  animated fadeInUp visible events-slots" data-animation="fadeInUp" data-animation-delay="400">
 							<div class="team-box text-center">
 								<!-- img -->
-								<img src="img/exemplo.jpg" width="270" height="270" class="img-responsive center-text" alt="">
+								<img src="img/evento2.jpg" width="270" height="270" class="img-responsive center-text" alt="">
 								<!-- Title -->
 								<h4>
 									Evento2
@@ -560,10 +560,10 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 							</div>
 						</div>
 						<!-- store 3 -->
-						<div class="col-md-3 col-sm-3  animated fadeInUp visible" data-animation="fadeInUp" data-animation-delay="500">
+						<div class="col-md-3 col-sm-3  animated fadeInUp visible events-slots" data-animation="fadeInUp" data-animation-delay="500">
 							<div class="team-box text-center">
 								<!-- img -->
-								<img src="img/exemplo.jpg" width="270" height="270" class="img-responsive center-text" alt="">
+								<img src="img/evento3.jpg" width="270" height="270" class="img-responsive center-text" alt="">
 								<!-- Title -->
 								<h4>
 									Evento3
@@ -583,13 +583,36 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 							</div>
 						</div>
 						<!-- store 4 -->
-						<div class="col-md-3 col-sm-3  animated fadeInUp visible" data-animation="fadeInUp" data-animation-delay="600">
+						<div class="col-md-3 col-sm-3  animated fadeInUp visible events-slots" data-animation="fadeInUp" data-animation-delay="600">
 							<div class="team-box text-center">
 								<!-- img -->
-								<img src="img/exemplo.jpg" width="270" height="270" class="img-responsive center-text" alt="">
+								<img src="img/evento4.jpg" width="270" height="270" class="img-responsive center-text" alt="">
 								<!-- Title -->
 								<h4>
 									Evento4
+								</h4>
+								<h5>
+									São Leopoldo
+								</h5>
+								<p>
+									rua nao sei oq<br>Fone: (51) 99999-9999.
+								</p>
+								<!-- maps icon -->
+								<ul class="list-inline">
+									<li>
+										<a href="https://www.google.com.br/maps/place/Av.+Borges+de+Medeiros,+2540,+Gramado+-+RS,+95670-000/@-29.3801897,-50.8726438,17z/data=!3m1!4b1!4m2!3m1!1s0x951932437c37ee8f:0xafe2b080d3468e57"><i class="fa fa-map-marker"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- store 5 -->
+						<div class="col-md-3 col-sm-3  animated fadeInUp visible events-slots" data-animation="fadeInUp" data-animation-delay="600">
+							<div class="team-box text-center">
+								<!-- img -->
+								<img src="img/evento5.jpg" width="270" height="270" class="img-responsive center-text" alt="">
+								<!-- Title -->
+								<h4>
+									Evento5
 								</h4>
 								<h5>
 									São Leopoldo
