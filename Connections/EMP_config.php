@@ -14,7 +14,7 @@ public static $EMP_instance;
 		$pass = "tenda";
 
         //$host = "localhost";
-		$host = "mysql.hostinger.com.br";
+		$host = "localhost";
 
         //$base = "tendadoencontro";
 		$base = "u276131258_tenda";
