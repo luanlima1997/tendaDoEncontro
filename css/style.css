@@ -2003,6 +2003,8 @@ border: 0 !important;
 	overflow:hidden;
 }	
 
+/* ================ Tag cloud ================ */
+
 #tagcloud{
-	margin-bottom: 25px;
+	margin-bottom: 35px;
 }

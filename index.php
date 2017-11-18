@@ -99,7 +99,7 @@ foreach($EMP_result as $EMP_lineManager)
 		<!-- End files CSS -->
 
 		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-		<script src="jquery.tagcloud.js"></script>
+		<script src="js/jquery.tagcloud.js"></script>
 		<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 
 	</head>
@@ -455,9 +455,7 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 							<a href="#" rel="3">eiusmod</a>
 							<a href="#" rel="1">tempor</a>
 							<a href="#" rel="12">incididunt</a>
-
 						  </div>
-					
 					<script>
 					$("#tagcloud a").tagcloud({
 						size: {start: 18, end: 48, unit: "px"},
