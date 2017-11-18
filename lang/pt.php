@@ -1,5 +1,5 @@
 <?php
-define( 'TITLEPAGE', 'Tenda do Encontro | blablabla' );
+define( 'TITLEPAGE', 'Tenda do Encontro' );
 define( 'MENU1', 'Inicio' );
 define( 'MENU2', 'Fotos' );
 define( 'MENU4', 'Quem Somos' );
@@ -17,9 +17,9 @@ define( 'CATALOG2', 'Reforços' );
 define( 'REF', 'Referência' );
 define( 'BUTTON_CATALOG', 'VER ALBUM COMPLETO' );
 define( 'TITLE2', 'Quem Somos' );
-define( 'SUBTITLE2', 'subTitulo,' ); 
-define( 'SUBTITLE2_2', 'São Leopoldo' ); 
-define( 'SUBTITLE2_3', 'Continuando subtitulo.' );
+define( 'SUBTITLE2', ' ,' ); 
+define( 'SUBTITLE2_2', 'Tenda do Encontro' ); 
+define( 'SUBTITLE2_3', 'Somos uma “comunidade”, que se recolhe na “Tenda do encontro”, para partilhar a vida com brincadeiras, reforços escolares, artesanatos. Construímos juntos no momento do desafio. Tudo isto em um clima de participação ativa, cooperação, dialogo respeito, aprendizagem e troca mútua.' );
 define( 'BLOC1_TITLE', 'Visão' );
 define( 'BLOC2_TITLE', 'Missão' );
 define( 'BLOC3_TITLE', 'Valores' );
