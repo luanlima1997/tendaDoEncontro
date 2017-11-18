@@ -7,11 +7,14 @@ public static $EMP_instance;
 
  public static function EMP_getInstance() {
 	try{
- 	    $user = "root";
+ 	    //$user = "root";
+		$user = "u276131258_tenda";
 
-        $pass = ""; 
+        //$pass = ""; 
+		$pass = "tenda";
 
-        $host = "localhost";
+        //$host = "localhost";
+		$host = "mysql.hostinger.com.br";
 
         $base = "tendadoencontro";
 
