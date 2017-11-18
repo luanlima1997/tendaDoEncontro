@@ -11,10 +11,9 @@ public static $EMP_instance;
 		$user = "u276131258_tenda";
 
         //$pass = ""; 
-		$pass = "tenda";
+		$pass = "tenda2017";
 
-        //$host = "localhost";
-		$host = "localhost";
+        $host = "localhost";
 
         //$base = "tendadoencontro";
 		$base = "u276131258_tenda";
