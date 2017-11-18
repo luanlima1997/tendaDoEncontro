@@ -16,7 +16,8 @@ public static $EMP_instance;
         //$host = "localhost";
 		$host = "mysql.hostinger.com.br";
 
-        $base = "tendadoencontro";
+        //$base = "tendadoencontro";
+		$base = "u276131258_tenda";
 
   	 if (!isset(self::$EMP_instance)) {
 
