@@ -285,8 +285,20 @@ $("#map").gmap3({
 	scrollwheel:false,
 	draggable: true }
 	}
-	});	
-
+	}).route({
+        origin:"Unisinos - Av. Mauá, 3539 - Santa Teresa, São Leopoldo - RS",
+        destination:"Rua Ermelindo Varnieri - Duque de Caxias, São Leopoldo - RS",
+        travelMode: google.maps.DirectionsTravelMode.DRIVING
+      })
+      .directionsrenderer(function (results) {
+        if (results) {
+          return {
+            panel: "#box",
+            directions: results
+          }
+        }
+      });
+	  
 /* ==============================================
 Back to Top
 =============================================== */
