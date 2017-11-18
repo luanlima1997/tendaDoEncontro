@@ -459,7 +459,7 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 					<script>
 					$("#tagcloud a").tagcloud({
 						size: {start: 18, end: 48, unit: "px"},
-						color: {start: '#3498DB', end: '#46CFB0'}
+						color: {start: '#FFD700', end: '#f1cc0a'}
 					});
 					</script>
 					</div>
@@ -751,6 +751,7 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 								</div>
 								<div class="col-md-12 text-center">
 								<button type="submit" class="btn btn-primary btn-lg btn-responsive"><?php echo BUTTON_CONTACT ?> <i class="fa fa-rocket"></i></button>
+								<a type="button" href="https://www.aquirs.com.br/telefones-uteis-sao-leopoldo/" class="btn btn-primary btn-lg btn-responsive">Telefones Úteis<i class="fa fa-rocket"></i></a>
 								</div>
 							</fieldset>
 						</form>
@@ -762,7 +763,11 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 			<section>
 				<div id="map">
 				</div>
+				<div class="maps-routes-explanation">
+					<img src="img/routeMaps.JPG" width="675px" height="480px" class="" rel="home" href="#" title="Tenda do Encontro">
+				</div>
 			</section>
+			
 			<!-- End Google Map -->
 			<!-- Start Footer -->
 			<footer id="footer">
@@ -827,6 +832,7 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 		<script src="js/jquery.backstretch.min.js"></script>
 		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 		<script type="text/javascript" src="js/gmap3.min.js"></script>
+		<script type="text/javascript" src="js/gmap3.js"></script>
 		<script src="js/scripts.js" type="text/javascript"></script>
 		<script type="text/javascript" src="js/jquery.appear.js"></script>
 		<script type="text/javascript" src="js/jquery.vegas.min.js"></script>
