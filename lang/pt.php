@@ -19,7 +19,7 @@ define( 'BUTTON_CATALOG', 'VER ALBUM COMPLETO' );
 define( 'TITLE2', 'Quem Somos' );
 define( 'SUBTITLE2', ' ' ); 
 define( 'SUBTITLE2_2', 'Tenda do Encontro' ); 
-define( 'SUBTITLE2_3', 'Somos uma “comunidade”, que se recolhe na “Tenda do encontro”, para partilhar a vida com brincadeiras, reforços escolares, artesanatos. Construímos juntos no momento do desafio. Tudo isto em um clima de participação ativa, cooperação, dialogo respeito, aprendizagem e troca mútua.' );
+define( 'SUBTITLE2_3', 'Somos uma “comunidade”, que se recolhe na “Tenda do encontro”, para partilhar a vida com brincadeiras, reforços escolares, artesanatos. Construímos juntos no momento do desafio. Tudo isto em um clima de participação ativa, cooperação, dialogo respeito, aprendizagem e troca mútua. Veja um pouco mais de nossa história nosso <a href="#">Blog.</a>' );
 define( 'BLOC1_TITLE', 'Objetivo' );
 define( 'BLOC2_TITLE', 'Missão' );
 define( 'BLOC3_TITLE', 'Valores' );

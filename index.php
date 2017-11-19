@@ -818,6 +818,9 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 								<li class="connected-icon">
 									<a target="_blank" href="#"><i class="fa fa-google-plus fa-2-5x"></i></a>
 								</li>								
+								<li class="connected-icon">
+									<a target="_blank" href="#"><i class="fa fa-pencil-square-o fa-2-5x"></i></a>
+								</li>								
 							</ul>
 						</div>
 						<p>
