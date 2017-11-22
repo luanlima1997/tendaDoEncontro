@@ -2014,9 +2014,17 @@ border: 0 !important;
 }
 
 .maps-routes-explanation{
-	margin-left: 12%;
+	margin-left: 30px;
 }
 
 .map-directions{
 	margin-left: 35px;
+}
+
+.place-icon{
+	font-size: 35px;
+}
+
+.map-directions-width{
+	width: 675px;
 }

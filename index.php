@@ -765,28 +765,34 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 				<div id="map">
 				</div>
 				<div class="row">
-					<div class="col-md-6">
-						<div class="maps-routes-explanation">
-							<img src="img/routeMaps.JPG" width="675px" height="480px" class="" rel="home" href="#" title="Tenda do Encontro">
-						</div>	
-					</div>
-					<div class="col-md-5">
-						<h3>
+				<div class="col-lg-12 section-title-price">
+						<h2>
 							<small>
-								<i class="material-icons">place</i> Como <span class="highlight"> chegar</span> na tenda:
+								<i class="material-icons place-icon">place</i> Como <span class="highlight"> chegar</span> na tenda:
 							</small>
-						</h3>		
-						<div class="map-directions">
-							<p class="lead"> 1 - Após chegar na Rua Ermelindo Varnieiri: Vire à Esquerda </p>
-							<p class="lead"> 2 - Na segunda Rua Sem Denominação: dobre a Direita </p>
-							<p class="lead"> 3 - Dobre a Primeira a Direita </p>
-							<p class="lead"> 4 - Dobre a Primeira a Esquerda </p>
-							<p class="lead"> 5 - Dobre a Primeira a Esquerda </p>
-							<p class="lead"> 6 - E dobre a Primeira a Direita </p>
-							<p class="lead"> 7 - A Tenda do Encontro é a segunda estrutura a Esquerda </p>
-						</div>	
-							
-					</div> 			
+							<br>
+						</h2>
+
+					</div>
+					<div class="row">
+						<div class="col-md-6 map-directions-width">
+							<div class="maps-routes-explanation map-directions-width">
+								<img src="img/routeMaps.JPG" width="675px" height="480px" class="" rel="home" href="#" title="Tenda do Encontro">
+							</div>	
+						</div>
+						<div class="col-md-1"></div>
+						<div class="col-md-5">		
+							<div class="map-directions">
+								<p class="lead"> 1 - Após chegar na Rua Ermelindo Varnieiri: Vire à Esquerda </p>
+								<p class="lead"> 2 - Na segunda Rua Sem Denominação: dobre a Direita </p>
+								<p class="lead"> 3 - Dobre a Primeira a Direita </p>
+								<p class="lead"> 4 - Dobre a Primeira a Esquerda </p>
+								<p class="lead"> 5 - Dobre a Primeira a Esquerda </p>
+								<p class="lead"> 6 - E dobre a Primeira a Direita </p>
+								<p class="lead"> 7 - A Tenda do Encontro é a segunda estrutura a Esquerda </p>
+							</div>	
+						</div> 	
+				</div>					
 				</div>				
 			</section>
 			
