@@ -810,22 +810,10 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 						<div class="col-md-12 footer-social">
 							<ul class="connected-icons text-center">
 								<li class="connected-icon">
-									<a target="_blank" href="#"><i class="fa fa-twitter fa-2-5x"></i></a>
-								</li>
-								<li class="connected-icon">
-									<a target="_blank" href="#"><i class="fa fa-facebook fa-2-5x"></i></a>
-								</li>
-								<li class="connected-icon">
-									<a target="_blank" href="#"><i class="fa fa-instagram fa-2-5x"></i></a>
-								</li>
-								<li class="connected-icon">
-									<a target="_blank" href="#"><i class="fa fa-pinterest fa-2-5x"></i></a>
-								</li>
-								<li class="connected-icon">
-									<a target="_blank" href="#"><i class="fa fa-google-plus fa-2-5x"></i></a>
+									<a target="_blank" href="https://www.facebook.com/tendadoencontro.org/"><i class="fa fa-facebook fa-2-5x"></i></a>
 								</li>								
 								<li class="connected-icon">
-									<a target="_blank" href="#"><i class="fa fa-pencil-square-o fa-2-5x"></i></a>
+									<a target="_blank" href="http://voluntariadoemacao.blogspot.com.br/"><i class="fa fa-pencil-square-o fa-2-5x"></i></a>
 								</li>								
 							</ul>
 						</div>
