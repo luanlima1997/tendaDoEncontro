@@ -97,7 +97,7 @@ foreach($EMP_result as $EMP_lineManager)
 		<!-- Skin Color -->
 		<link rel="stylesheet" href="css/<?php echo $EMP_lineManager['color']?>.css" id="color-skins"/>
 		<!-- End files CSS -->
-
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVHWCqf74nM-QB3OIGVGuMVpdYMog0qe8&callback=initMap"ype="text/javascript"></script>
 		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script src="js/jquery.tagcloud.js"></script>
 		<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
@@ -859,6 +859,7 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 		<script type="text/javascript" src="js/jquery.nav.js"></script>
 		<script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
 		<script type="text/javascript" src="js/custom.js"></script>
+		
 		<script type="text/javascript">
 
 function formatar_mascara(src, mascara) {
