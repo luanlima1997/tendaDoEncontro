@@ -97,7 +97,7 @@ foreach($EMP_result as $EMP_lineManager)
 		<!-- Skin Color -->
 		<link rel="stylesheet" href="css/<?php echo $EMP_lineManager['color']?>.css" id="color-skins"/>
 		<!-- End files CSS -->
-		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVHWCqf74nM-QB3OIGVGuMVpdYMog0qe8&callback=initMap"ype="text/javascript"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVHWCqf74nM-QB3OIGVGuMVpdYMog0qe8&callback=initMap" type="text/javascript"></script>
 		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script src="js/jquery.tagcloud.js"></script>
 		<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
@@ -468,28 +468,69 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 			</section>
 			<!-- End About -->
 	<!-- Video section Starts -->
-		<section id="home-slideshow" class="home-fullscreen-slider" data-stellar-background-ratio="0.7" data-stellar-vertical-offset="">
-			<div class="parallax-overlay">
-			</div>
+		<section id="home-slideshow" class="home-fullscreen-slider how-to-help-container" data-stellar-background-ratio="0.7" data-stellar-vertical-offset="">
 			<div class="home-container text-center">
 				<div class="home-title liquid-slider" id="slider-home">
 					<div>
 						<h2>
 							<small class="white">
-								<?php echo $EMP_lineManager['collectionTitle'] ?>
+								Contribua Conosco 
 							</small>
 						</h2>
 						<p class="lead">
-							<?php echo $EMP_lineManager['collectionSubtitle'] ?>
+							Como eu posso ajudar a Tenda do Encontro?
 							<span class="highlight">
 							</span>
 						</p>
-					<h2>
-					<i class="fa fa-video-camera"></i>
-					</h2>
 				</div>
 				<div class="col-md-10 col-md-offset-1 video-content">
-					<iframe src="<?php echo "http://player.vimeo.com/video/".$EMP_lineManager['collectionVideo'].""?>?title=0&amp;byline=0&amp;portrait=1" width="400" height="240"></iframe>
+				
+					<div class="col-md-6 col-sm-6">
+							<div class="about-row">
+								<div class="about-info">
+									<h4><i class="fa fa-thumbs-o-up how-to-help-icon" aria-hidden="true">
+									</i>
+										Parceirias e atividades curriculares<br>
+										<small>
+											Participa com o seu tempo colaborando conosco.
+										</small>
+									</h4>
+								
+										<p class="how-to-help-description">
+											Entre em contato pelo email: tendadoencontro2017@gmail.com </br>
+											Pelo telefone: (51)3091 - 2267</br>
+											WhatsApp: +55 51 8050 - 1576			</br>		
+										</p>
+									
+								</div>
+							</div>
+					</div>
+					
+					
+					<div class="col-md-6 col-sm-6">
+							<div class="about-row">
+	
+								<div class="about-info">
+									<h4>
+									<i class="fa fa-money how-to-help-icon" aria-hidden="true">
+									</i>
+									Queres Doar?<br>
+										<small>
+											Ajuda econômica:
+
+										</small>
+									</h4>
+								
+										<p class="how-to-help-description">
+											Colabore com qualquer quantia em dinheiro e ajude nosso trabalho a continuar.</br>
+											Ou doações concretas (bolachas, suco, comida para as famílias mais necessitadas, roupas, material de construção, material escolar, brinquedos...)</br>
+											Doações para: Associação Laura Vicuna</br>
+											Agência: 4896 / Conta: 130000 12-2</br>
+										</p>
+									
+								</div>
+							</div>
+					</div>
 				</div>
 			</div>
 		</div>
