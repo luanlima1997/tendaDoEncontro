@@ -2028,3 +2028,17 @@ border: 0 !important;
 .map-directions-width{
 	width: 675px;
 }
+
+.how-to-help-container{
+	background-color: rgb(241, 204, 10) !important;
+}
+
+.how-to-help-description{
+	font-size: 19px;
+}
+
+.how-to-help-icon{
+	color:black; 
+	font-size: 25px; 
+	margin-right: 10px;
+}

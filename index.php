@@ -499,7 +499,8 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 										<p class="how-to-help-description">
 											Entre em contato pelo email: tendadoencontro2017@gmail.com </br>
 											Pelo telefone: (51)3091 - 2267</br>
-											WhatsApp: +55 51 8050 - 1576			</br>		
+											WhatsApp: +55 51 99729 - 0399			</br>		
+											WhatsApp: +55 51 99955 - 8770			</br>		
 										</p>
 									
 								</div>
