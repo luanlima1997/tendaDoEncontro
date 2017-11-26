@@ -99,6 +99,8 @@ foreach($EMP_result as $EMP_lineManager)
 		<!-- End files CSS -->
 		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script src="js/jquery.tagcloud.js"></script>
+		<script src="js/jqcloud.js"></script>
+		<link href="css/jqcloud.css" rel="stylesheet">
 		<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -378,6 +380,7 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 							<?php echo SUBTITLE2_3 ?>
 						</p>
 					</div>
+					<img src="img/comunidade-logo.png" alt="" style="margin-left: 40%; margin-bottom:30px">
 					<div class="row">
 						<div class="col-md-4 col-sm-6">
 							<div class="about-row">
@@ -441,7 +444,72 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 						</div>
 					</div>
 				</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-6"></div>
+					<div class="col-md-6 col-sm-6">
+						  <div class="bs-example">
+							<div id="demo-simple" class="demo"></div>
+						  </div>
+						
 
+
+						<script>
+											var words = [
+							{text: "Lorem", weight: 13},
+							{text: "Ipsum", weight: 10.5},
+							{text: "Dolor", weight: 9.4},
+							{text: "Sit", weight: 8},
+							{text: "Amet", weight: 6.2},
+							{text: "Consectetur", weight: 5},
+							{text: "Adipiscing", weight: 5},
+							{text: "Elit", weight: 5},
+							{text: "Nam et", weight: 5},
+							{text: "Leo", weight: 4},
+							{text: "Sapien", weight: 4},
+							{text: "Pellentesque", weight: 3},
+							{text: "habitant", weight: 3},
+							{text: "morbi", weight: 3},
+							{text: "tristisque", weight: 3},
+							{text: "senectus", weight: 3},
+							{text: "et netus", weight: 3},
+							{text: "et malesuada", weight: 3},
+							{text: "fames", weight: 2},
+							{text: "ac turpis", weight: 2},
+							{text: "egestas", weight: 2},
+							{text: "Aenean", weight: 2},
+							{text: "vestibulum", weight: 2},
+							{text: "elit", weight: 2},
+							{text: "sit amet", weight: 2},
+							{text: "metus", weight: 2},
+							{text: "adipiscing", weight: 2},
+							{text: "ut ultrices", weight: 2},
+							{text: "justo", weight: 1},
+							{text: "dictum", weight: 1},
+							{text: "Ut et leo", weight: 1},
+							{text: "metus", weight: 1},
+							{text: "at molestie", weight: 1},
+							{text: "purus", weight: 1},
+							{text: "Curabitur", weight: 1},
+							{text: "diam", weight: 1},
+							{text: "dui", weight: 1},
+							{text: "ullamcorper", weight: 1},
+							{text: "id vuluptate ut", weight: 1},
+							{text: "mattis", weight: 1},
+							{text: "et nulla", weight: 1},
+							{text: "Sed", weight: 1}
+						];
+	
+	
+						$( window ).load(function() {
+						  // Run code
+						  $('#demo-simple').jQCloud(words);
+						});
+
+						</script>
+					
+					
+					</div>
+				</div>
 			</section>
 			<!-- End About -->
 	<!-- Donation section Starts -->
@@ -745,7 +813,8 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 							<ul class="connected-icons text-center">
 								<li class="connected-icon">
 									<a target="_blank" href="https://www.facebook.com/tendadoencontro.org/"><i class="fa fa-facebook fa-2-5x"></i></a>
-								</li>								
+								</li>
+															
 								<li class="connected-icon">
 									<a target="_blank" href="http://voluntariadoemacao.blogspot.com.br/"><i class="fa fa-pencil-square-o fa-2-5x"></i></a>
 								</li>								
@@ -763,9 +832,7 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 				</div>
 			</footer>
 			<!-- End Footer -->
-
 		</div>
-
 <!-- ModalMaps -->
 <div id="modalMaps" class="modal fade" role="dialog">
   <div class="modal-dialog modal-lg">
@@ -826,6 +893,8 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 		<script type="text/javascript" src="js/jquery.nav.js"></script>
 		<script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
 		<script type="text/javascript" src="js/custom.js"></script>
+		<script src="http://mistic100.github.io/jQCloud/dist/jqcloud2/dist/jqcloud.min.js"></script>
+		<script src="http://mistic100.github.io/jQCloud/dist/demo-words.js"></script>
 		<script type="text/javascript">
 
 function formatar_mascara(src, mascara) {
