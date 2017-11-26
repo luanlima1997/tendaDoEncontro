@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once ("/aut/EMP_user.php");
+require_once ("aut/EMP_user.php");
 
 $usuarioDAO = new usuarioDAO();
 

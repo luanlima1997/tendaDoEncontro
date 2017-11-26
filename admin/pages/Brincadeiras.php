@@ -2,7 +2,7 @@
 
 session_start();
 
-require_once ("/aut/EMP_user.php");
+require_once ("aut/EMP_user.php");
 require_once("../../Connections/EMP_job.php");
 
 $EMP_db = Conexao::EMP_getInstance();
