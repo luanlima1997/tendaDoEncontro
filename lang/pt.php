@@ -6,6 +6,7 @@ define( 'MENU4', 'Quem Somos' );
 define( 'MENU5', 'Eventos' );
 define( 'MENU6', 'Contato' );
 define( 'MENU7', 'Localização' );
+define( 'MENU8', 'Contribua' );
 define( 'BUTTON_SLIDE1', 'NOSSAS FOTOS ' );
 define( 'BUTTON_SLIDE2', 'AJUDE A TENDA ' );
 define( 'BUTTON_SLIDE3', 'CONFIRA OS EVENTOS ' );
