@@ -1153,7 +1153,7 @@ width:110px;
 	background-position: center 0%;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-image: url(../admin/pages/produtos/categorias/slides/slide-1.jpg);
+	background-image: url(../admin/pages/fotos/categorias/slides/slide-1.jpg);
 	display: table;
 	width: 100%;
 	height: 100%;
@@ -1169,7 +1169,7 @@ width:110px;
 	background-position: center 0%;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-image: url(../admin/pages/produtos/categorias/slides/slide-1.jpg);
+	background-image: url(../admin/pages/produtos/fotos/slides/slide-1.jpg);
 	display: table;
 	width: 100%;
 	height: 100%;
@@ -1418,12 +1418,14 @@ acronym {
 	background-color: #121212;
     padding-bottom: 15px;
 }
-.back-to-top {
+.how-to-get {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
 	display: block;
 	background: #121212;
-	width: 45px;
-	height: 40px;
-	font-size: 28px;
+	width: 200px;
+	height: 60px;
+	font-size: 18px;
 	line-height: 38px;
 	position: absolute;
 	top: -40px;
@@ -1723,7 +1725,7 @@ ul.caret-list li:before {
     float:left; 
     margin-right: 20px
 }
-#back-to-top {
+#how-to-get {
     position: fixed;
     z-index: 1000;
     bottom: 25px;
@@ -1731,7 +1733,7 @@ ul.caret-list li:before {
     display: none;
     cursor: pointer;
 }
-#back-to-top a:hover {
+#how-to-get a:hover {
     color: #999;
 }
 .action-btn {

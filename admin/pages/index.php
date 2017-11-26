@@ -27,7 +27,7 @@ $EMP_db = Conexao::EMP_getInstance();
 $EMP_resultCaregory = EMP_select("categorys","categorys", $EMP_db);
 $EMP_files = 0;
 foreach($EMP_resultCaregory as $EMP_lineCategory){
-    $EMP_dir = "produtos/categorias/";
+    $EMP_dir = "fotos/categorias/";
     $EMP_aux = count(glob($EMP_dir.$EMP_lineCategory['categorys']."/*.*"));
     $EMP_files += $EMP_aux;    
 }

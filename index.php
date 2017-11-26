@@ -38,13 +38,12 @@ foreach($EMP_result as $EMP_lineManager)
 	<head>
 		<!-- Start Meta Data -->
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title><?php echo TITLEPAGE ?></title>
 		<meta name="description" content="Tenda do encontro."> <!-- TODO: DESCRIÇÃO !!!! -->
 		<meta name="keywords" content="tenda, tenda do encontro."/> <!-- TODO: MAIS PALAVRAS CHAVES !!!! -->
 		<meta name="author" content=""> <!-- TODO: ?????? !!!! -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<!-- End Meta Data -->
 		<!-- Start Meta Facebook -->
 		<meta property="og:url" content="http://tendadoencontro.org" /> 
@@ -86,6 +85,7 @@ foreach($EMP_result as $EMP_lineManager)
 		<!-- blueimp Gallery styles -->
    		<link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
 		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<!-- YTPlayer stlylesheet -->
 		<link href="css/YTPlayer.css" media="all" rel="stylesheet" type="text/css">
 		<!-- Flexslider2 stlylesheet -->
@@ -130,7 +130,7 @@ foreach($EMP_result as $EMP_lineManager)
 							<span class="icon-bar">
 							</span>
 						</button>
-						<img src="img/tendadoencontro_icon.png" width="205" height="30" class="navbar-brand" rel="home" href="#" title="Tenda do Encontro">
+						<img src="img/tendadoencontro_icon.png" width="205" height="30" class="navbar-brand" rel="home" alt="Tenda do Encontro" title="Tenda do Encontro">
 					</div>
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse" id="main-nav">
@@ -139,7 +139,7 @@ foreach($EMP_result as $EMP_lineManager)
 								<a href="#home-slideshow"><?php echo MENU1 ?></a>
 							</li>
 							<li>
-								<a href="#our-work"><?php echo MENU2 ?></a>
+								<a href="#photos"><?php echo MENU2 ?></a>
 							</li>							
 							<li>
 								<a href="#about"><?php echo MENU4 ?></a>
@@ -149,6 +149,9 @@ foreach($EMP_result as $EMP_lineManager)
 							</li>														
 							<li>
 								<a href="#contact-form"><?php echo MENU6 ?></a>
+							</li>
+							<li>
+								<a href="#map"><?php echo MENU7 ?></a>
 							</li>
 							<li>
 								<a href="change_pt.php"> <img src="img/pt.png" width="20" title="PT" height="20"> </a>
@@ -175,20 +178,20 @@ foreach($EMP_result as $EMP_lineManager)
 				<div class="home-title liquid-slider" id="slider-home">
 					<div>
 						<h1>
-							<titulo class="white">
+							<small class="white">
 								<?php echo $EMP_lineManager['slide1'] ?>
-							</titulo>
+							</small>
 							<br>
 							<strong>
 								<?php echo $EMP_lineManager['slideTitle1'] ?>
 							</strong>
 						</h1>
 						<p class="lead">
-							<?php echo $EMP_lineManager['slideTitle2'] ?>
+							<?php echo $EMP_lineManager['slideSubtitle1'] ?>
 						</p>
 						<div class="home-btn">
 							<h4 class="btn-home">
-								<a href="#our-work"><?php echo BUTTON_SLIDE1 ?><i class="icon ion-heart"></i></a>
+								<a href="#photos"><?php echo BUTTON_SLIDE1 ?><i class="fa fa-camera-retro"></i></a>
 							</h4>
 						</div>
 					</div>
@@ -207,7 +210,7 @@ foreach($EMP_result as $EMP_lineManager)
 						</p>
 						<div class="home-btn">
 							<h4 class="btn-home">
-								<a href="<?php echo "http://vimeo.com/".$EMP_lineManager['collectionVideo'].""?>"><?php echo BUTTON_SLIDE2 ?><i class="fa fa-youtube-play"></i></a>
+								<a href="#home-slideshow"><?php echo BUTTON_SLIDE2 ?><i class="icon ion-heart"></i></a>
 							</h4>
 						</div>
 					</div>
@@ -226,7 +229,7 @@ foreach($EMP_result as $EMP_lineManager)
 						</p>
 						<div class="home-btn">
 							<h4 class="btn-home">
-								<a href="#"><?php echo BUTTON_SLIDE3 ?><i class="fa fa-shopping-cart"></i></a>
+								<a href="#events"><?php echo BUTTON_SLIDE3 ?><i class="fa fa-file-text-o"></i></a>
 							</h4>
 						</div>
 					</div>
@@ -237,7 +240,7 @@ foreach($EMP_result as $EMP_lineManager)
 		<!-- Site Wrapper -->
 		<div class="site-wrapper">
 			<!-- Start Catalog -->
-			<section id="our-work">
+			<section id="photos">
 				<div class="container">
 					<div class="col-lg-12 section-title">
 						<h2>
@@ -272,20 +275,33 @@ foreach($EMP_resultOne as $EMP_lineCategoryOne) {
 	if(!isset($_COOKIE["lang"]) || $_COOKIE["lang"] == "pt") {
 	if($EMP_lineCategoryOne['categorys'] == "Festas")
 		$category_view = "Festas";
-	if($EMP_lineCategoryOne['categorys'] == "Reforços")
+	if($EMP_lineCategoryOne['categorys'] == "Reforcos")
 		$category_view = "Reforços";
+	if($EMP_lineCategoryOne['categorys'] == "Brincadeiras")
+		$category_view = "Brincadeiras";	
+	if($EMP_lineCategoryOne['categorys'] == "Cursos")
+		$category_view = "Cursos";
 	}	
-	elseif($_COOKIE["lang"] == "en"){
+	else if($_COOKIE["lang"] == "en"){
 	if($EMP_lineCategoryOne['categorys'] == "Festas")
 		$category_view = "Festas";
-	if($EMP_lineCategoryOne['categorys'] == "Reforços")
+	if($EMP_lineCategoryOne['categorys'] == "Reforcos")
 		$category_view = "Reforços";
+	if($EMP_lineCategoryOne['categorys'] == "Brincadeiras")
+		$category_view = "Brincadeiras";	
+	if($EMP_lineCategoryOne['categorys'] == "Cursos")
+		$category_view = "Cursos";
 	}
-	elseif($_COOKIE["lang"] == "es"){
+	else if($_COOKIE["lang"] == "es"){
 	if($EMP_lineCategoryOne['categorys'] == "Festas")
 		$category_view = "Festas";
-	if($EMP_lineCategoryOne['categorys'] == "Reforços")
-		$category_view = "Reforços";	}
+	if($EMP_lineCategoryOne['categorys'] == "Reforcos")
+		$category_view = "Reforços";
+	if($EMP_lineCategoryOne['categorys'] == "Brincadeiras")
+		$category_view = "Brincadeiras";	
+	if($EMP_lineCategoryOne['categorys'] == "Cursos")
+		$category_view = "Cursos";
+	}
 ?>
 
 <?php if($EMP_lineCategoryOne['categorys'] == "Festas" || $EMP_lineCategoryOne['categorys'] == "Festas" || $EMP_lineCategoryOne['categorys'] == "Festas"){ 
@@ -307,7 +323,7 @@ foreach($EMP_resultOne as $EMP_lineCategoryOne) {
 	<?php 
 	
 foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
-		$EMP_dir = "admin/pages/produtos/categorias/";
+		$EMP_dir = "admin/pages/fotos/categorias/";
 		$EMP_files = glob($EMP_dir.$EMP_lineCategoryTwo['categorys']."/*.*");
 ?>
 	<?php
@@ -426,119 +442,58 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-3 col-sm-6"></div>
-					<div class="col-md-6 col-sm-6">
-						<div id="tagcloud">
-							<a href="#" rel="8">Cultura</a>
-							<a href="#" rel="2">Educação</a>
-							<a href="#" rel="3">Sociedade</a>
-							<a href="#" rel="4">Esperança</a>
-							<a href="#" rel="5">Amizade</a>
-							<a href="#" rel="6">Solidariedade</a>
-							<a href="#" rel="7">Acompanhamento</a>
-							<a href="#" rel="8">Presença</a>
-							<a href="#" rel="5">Construção</a>
-							<a href="#" rel="7">Cidadania</a>
-							<a href="#" rel="3">Vida</a>
-							<a href="#" rel="1">Recreatividade</a>
-							<a href="#" rel="12">Celebração</a>
-							<a href="#" rel="8">Comunidade</a>
-							<a href="#" rel="2">Familiaridade</a>
-							<a href="#" rel="3">Conhecimento</a>
-							<a href="#" rel="4">Empoderamento</a>
-							<a href="#" rel="5">Protagonismo</a>
-							<a href="#" rel="6">Benefícios</a>
-							<a href="#" rel="7">Pessoas</a>
-							<a href="#" rel="8">Participação</a>
-							<a href="#" rel="5">Taabalho</a>
-							<a href="#" rel="7">Transparência</a>
-							<a href="#" rel="3">Brincadeiras</a>
-							<a href="#" rel="1">Cooperação</a>
-							<a href="#" rel="12">Jogos</a>
-						  </div>
-					<script>
-					$("#tagcloud a").tagcloud({
-						size: {start: 18, end: 48, unit: "px"},
-						color: {start: '#FFD700', end: '#f1cc0a'}
-					});
-					</script>
-					</div>
-				</div>
+
 			</section>
 			<!-- End About -->
-	<!-- Video section Starts -->
-		<section id="home-slideshow" class="home-fullscreen-slider how-to-help-container" data-stellar-background-ratio="0.7" data-stellar-vertical-offset="">
+	<!-- Donation section Starts -->
+		<section id="home-slideshow" class="home-fullscreen-slider" data-stellar-background-ratio="0.7" data-stellar-vertical-offset="">
+			<div class="parallax-overlay">
+			</div>
 			<div class="home-container text-center">
 				<div class="home-title liquid-slider" id="slider-home">
 					<div>
 						<h2>
 							<small class="white">
-								Contribua Conosco 
+								<?php echo $EMP_lineManager['donationTitle'] ?>
 							</small>
 						</h2>
 						<p class="lead">
-							Como eu posso ajudar a Tenda do Encontro?
+							<?php echo $EMP_lineManager['donationSubtitle'] ?>
 							<span class="highlight">
 							</span>
 						</p>
 				</div>
-				<div class="col-md-10 col-md-offset-1 video-content">
-				
-					<div class="col-md-6 col-sm-6">
-							<div class="about-row">
-								<div class="about-info">
-									<h4><i class="fa fa-thumbs-o-up how-to-help-icon" aria-hidden="true">
-									</i>
-										Parceirias e atividades curriculares<br>
-										<small>
-											Participa com o seu tempo colaborando conosco.
-										</small>
-									</h4>
-								
-										<p class="how-to-help-description">
-											Entre em contato pelo email: tendadoencontro2017@gmail.com </br>
-											Pelo telefone: (51)3091 - 2267</br>
-											WhatsApp: +55 51 99729 - 0399			</br>		
-											WhatsApp: +55 51 99955 - 8770			</br>		
-										</p>
-									
-								</div>
-							</div>
-					</div>
-					
-					
-					<div class="col-md-6 col-sm-6">
-							<div class="about-row">
-	
-								<div class="about-info">
+					<div class="row">
+						<div class="col-md-6 col-sm-6">
+								<img src="img/donation1.svg" width="50" height="50" />
 									<h4>
-									<i class="fa fa-money how-to-help-icon" aria-hidden="true">
-									</i>
-									Queres Doar?<br>
-										<small>
-											Ajuda econômica:
-
+									<i class="fa fa-"></i>
+										<?php echo BLOC1_DONATE_TITLE ?>
+										<br>
+										<small class="white">
+											<?php echo BLOC1_DONATE_TEXT ?>
+										</small>
+										
+									</h4>
+						</div>
+						<div class="col-md-6 col-sm-6">
+								<img src="img/donation2.svg" width="50" height="50" />
+									<h4>
+										<?php echo BLOC2_DONATE_TITLE ?>
+										<br>
+										<small class="white">
+											<?php echo BLOC2_DONATE_TEXT ?>
 										</small>
 									</h4>
-								
-										<p class="how-to-help-description">
-											Colabore com qualquer quantia em dinheiro e ajude nosso trabalho a continuar.</br>
-											Ou doações concretas (bolachas, suco, comida para as famílias mais necessitadas, roupas, material de construção, material escolar, brinquedos...)</br>
-											Doações para: Associação Laura Vicuna</br>
-											Agência: 4896 / Conta: 130000 12-2</br>
-										</p>
-									
-								</div>
-							</div>
+						</div>
 					</div>
-				</div>
+					<br>
 			</div>
 		</div>
 	</section>
 	<!-- Video section Ends -->
 			<!-- Start store -->
-			<section id="lojas">
+			<section id="events">
 				<div class="container">
 					<div class="col-lg-12 section-title-team">
 						<h2>
@@ -557,7 +512,7 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 						</h2>
 					</div>
 					<div class="row row-events">
-						<!-- store 1 -->
+						<!-- event1 -->
 						<div class="col-md-3 col-sm-3 animated fadeInUp visible events-slots" data-animation="fadeInUp" data-animation-delay="300">
 							<div class="team-box text-center">
 								<!-- img -->
@@ -572,39 +527,26 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 								<p>
 									Sábados 10h - 12h
 								</p>
-								<!-- maps icon -->
-								<ul class="list-inline">
-									<li>
-										<!-- <a href="https://www.google.com.br/maps/place/Av.+Jo%C3%A3o+Wallig,+1800+-+Passo+d'Areia,+Porto+Alegre+-+RS/@-30.0289036,-51.163953,16z/data=!4m2!3m1!1s0x95197799f080e533:0xbe6f3dcda1b17029"><i class="fa fa-map-marker"></i></a>
-										-->
-									</li>
-								</ul>
 							</div>
 						</div>
-						<!-- store 2 -->
+						<!-- event2 -->
 						<div class="col-md-3 col-sm-3  animated fadeInUp visible events-slots" data-animation="fadeInUp" data-animation-delay="400">
 							<div class="team-box text-center">
 								<!-- img -->
 								<img src="img/evento2.jpg" width="270" height="270" class="img-responsive center-text" alt="">
 								<!-- Title -->
 								<h4>
-									REFORÇO ESCOLAR
+									REFORÇO ESCOLAR PARA CRIANÇAS
 								</h4>
 								<h5>
-									
+									Estudos extras!
 								</h5>
 								<p>
 									Terças-Feiras 09h - 11h
 								</p>
-								<!-- maps icon -->
-								<ul class="list-inline">
-									<li>
-										<!-- <a href="https://www.google.com.br/maps/place/Av.+Praia+de+Belas,+1181+-+Praia+de+Belas,+Porto+Alegre+-+RS,+90110-001/@-30.0495266,-51.2287527,17z/data=!3m1!4b1!4m2!3m1!1s0x951978fa5dcb370d:0x6a27bece54fb0b63"><i class="fa fa-map-marker"></i></a>
-										-->
-									</li>
 							</div>
 						</div>
-						<!-- store 3 -->
+						<!-- event3 -->
 						<div class="col-md-3 col-sm-3  animated fadeInUp visible events-slots" data-animation="fadeInUp" data-animation-delay="500">
 							<div class="team-box text-center">
 								<!-- img -->
@@ -619,16 +561,9 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 								<p>
 									Sextas-Feiras 14h
 								</p>
-								<!-- maps icon -->
-								<ul class="list-inline">
-									<li>
-										<!-- <a href="https://www.google.com.br/maps/place/Cal%C3%A7ados+Crist%C3%B3foli+-+Store+%26+Outlet/@-29.673502,-51.142505,17z/data=!4m6!1m3!3m2!1s0x9519437403d16037:0xd7449dbb2c266e85!2sCal%C3%A7ados+Crist%C3%B3foli+-+Store+%26+Outlet!3m1!1s0x9519437403d16037:0xd7449dbb2c266e85"><i class="fa fa-map-marker"></i></a>
-										-->
-									</li>
-								</ul>
 							</div>
 						</div>
-						<!-- store 4 -->
+						<!-- event4 -->
 						<div class="col-md-3 col-sm-3  animated fadeInUp visible events-slots" data-animation="fadeInUp" data-animation-delay="600">
 							<div class="team-box text-center">
 								<!-- img -->
@@ -643,16 +578,9 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 								<p>
 									Sextas-Feiras 9h
 								</p>
-								<!-- maps icon -->
-								<ul class="list-inline">
-									<li>
-										<!-- <a href="https://www.google.com.br/maps/place/Av.+Borges+de+Medeiros,+2540,+Gramado+-+RS,+95670-000/@-29.3801897,-50.8726438,17z/data=!3m1!4b1!4m2!3m1!1s0x951932437c37ee8f:0xafe2b080d3468e57"><i class="fa fa-map-marker"></i></a>
-										-->
-									</li>
-								</ul>
 							</div>
 						</div>
-						<!-- store 5 -->
+						<!-- event5 -->
 						<div class="col-md-3 col-sm-3  animated fadeInUp visible events-slots" data-animation="fadeInUp" data-animation-delay="600">
 							<div class="team-box text-center">
 								<!-- img -->
@@ -667,13 +595,6 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 								<p>
 									Sábados 13h - 15h
 								</p>
-								<!-- maps icon -->
-								<ul class="list-inline">
-									<li>
-										<!-- <a href="https://www.google.com.br/maps/place/Av.+Borges+de+Medeiros,+2540,+Gramado+-+RS,+95670-000/@-29.3801897,-50.8726438,17z/data=!3m1!4b1!4m2!3m1!1s0x951932437c37ee8f:0xafe2b080d3468e57"><i class="fa fa-map-marker"></i></a>
-										-->
-									</li>
-								</ul>
 							</div>
 						</div>
 					</div>
@@ -794,7 +715,6 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 								</div>
 								<div class="col-md-12 text-center">
 								<button type="submit" class="btn btn-primary btn-lg btn-responsive"><?php echo BUTTON_CONTACT ?> <i class="fa fa-rocket"></i></button>
-								<a type="button" href="https://www.aquirs.com.br/telefones-uteis-sao-leopoldo/" class="btn btn-primary btn-lg btn-responsive">Telefones Úteis<i class="fa fa-rocket"></i></a>
 								</div>
 							</fieldset>
 						</form>
@@ -802,49 +722,20 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 				</div>
 			</section>
 			<!-- End Contact Form -->
+
 			<!-- Start Google Map -->
 			<section>
 				<div id="map">
 				</div>
-				<div class="row">
-				<div class="col-lg-12 section-title-price">
-						<h2>
-							<small>
-								<i class="material-icons place-icon">place</i> Como <span class="highlight"> chegar</span> na tenda:
-							</small>
-							<br>
-						</h2>
-
-					</div>
-					<div class="row">
-						<div class="col-md-6 map-directions-width">
-							<div class="maps-routes-explanation map-directions-width">
-								<img src="img/routeMaps.JPG" width="675px" height="480px" class="" rel="home" href="#" title="Tenda do Encontro">
-							</div>	
-						</div>
-						<div class="col-md-1"></div>
-						<div class="col-md-5">		
-							<div class="map-directions">
-								<p class="lead"> 1 - Após chegar na Rua Ermelindo Varnieiri: Vire à Esquerda </p>
-								<p class="lead"> 2 - Na segunda Rua Sem Denominação: dobre a Direita </p>
-								<p class="lead"> 3 - Dobre a Primeira a Direita </p>
-								<p class="lead"> 4 - Dobre a Primeira a Esquerda </p>
-								<p class="lead"> 5 - Dobre a Primeira a Esquerda </p>
-								<p class="lead"> 6 - E dobre a Primeira a Direita </p>
-								<p class="lead"> 7 - A Tenda do Encontro é a segunda estrutura a Esquerda </p>
-							</div>	
-						</div> 	
-				</div>					
-				</div>				
 			</section>
-			
 			<!-- End Google Map -->
+
 			<!-- Start Footer -->
 			<footer id="footer">
 				<div class="col-lg-12 text-center">
-					<div class="back-to-top">
-						<i class="fa fa-angle-double-up">
-						</i>
+					<div class="how-to-get">
+						<a data-toggle="modal" data-target="#modalMaps"><i class="fa fa-map-marker"></i> Como chegar?
+						</a>
 					</div>
 				</div>
 				<div class="container text-center">
@@ -864,14 +755,46 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 						</p>
 						<h5 class="footer-logo">
 						<small>
-							<a href="#">Emperium Code</a>
+							<a href="emperiumcode.com">Emperium Code</a>
 						</small>
 						</h5>
 					</div>
 				</div>
 			</footer>
 			<!-- End Footer -->
+
 		</div>
+
+<!-- ModalMaps -->
+<div id="modalMaps" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modalmaps content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"><i class="fa fa-street-view"></i>Veja abaixo como chegar até a "Tenda do Encontro"</h4>
+      </div>
+      <div class="modal-body">
+      
+								<p> 1- Após chegar na Rua Ermelindo Varnieiri: Vire à Esquerda </p>
+								<p> 2 - Na segunda Rua Sem Denominação: dobre a Direita </p>
+								<p> 3 - Dobre a Primeira a Direita </p>
+								<p> 4 - Dobre a Primeira a Esquerda </p>
+								<p> 5 - Dobre a Primeira a Esquerda </p>
+								<p> 6 - E dobre a Primeira a Direita </p>
+								<p> 7 - A Tenda do Encontro é a segunda estrutura a Esquerda </p>
+							<img class="img-responsive center-text" src="img/routeMaps.JPG"  alt="Como chegar na tenda" title="Tenda do Encontro">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
 		<!-- Start jQuery Plugins -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
@@ -924,14 +847,6 @@ var campo_temp
     }  
 } 
 
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-49172000-1', 'auto');
-  ga('send', 'pageview');
-  
 </script>
 <!-- End jQuery Plugins -->
 	</body>

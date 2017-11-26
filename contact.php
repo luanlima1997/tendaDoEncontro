@@ -6,10 +6,10 @@ require_once ('inc/class.phpmailer.php');
 
 $mail = new PHPMailer();
 $mail->IsSMTP(); // Define que a mensagem será SMTP
-$mail->Host = ""; // Endereço do servidor SMTP
-$mail->SMTPAuth = true; // Autenticação
-$mail->Username = ''; // Usuário do servidor SMTP
-$mail->Password = ''; // Senha da caixa postal utilizada
+$mail->Host = "smtp.gmail.com"; // Endereço do servidor SMTP
+$mail->SMTPAuth = false; // Autenticação
+$mail->Username = 'tendadoencontro2017@gmail.com'; // Usuário do servidor SMTP
+//$mail->Password = ''; // Senha da caixa postal utilizada
 
 $EMP_db = Conexao::EMP_getInstance();
 
@@ -33,7 +33,7 @@ if (isset($_SERVER["REQUEST_METHOD"]) && isset($_REQUEST[ 'name' ]) && isset($_R
 	$EMP_message = "Nome: ".$EMP_name." | Fone: ".$EMP_phone."\nMensagem: ".$EMP_message."\n\n---------------------------------\nEmperium Code - Business Solution";
 	$mail->From = $EMP_email;
 	$mail->FromName  = $EMP_name;
-	$mail->AddAddress('', '');
+	$mail->AddAddress('tendadoencontro2017@gmail.com', 'Tenda do Encontro');
 	$mail->IsHTML(true); // Define que o e-mail será enviado como HTML
 	$mail->CharSet = 'iso-8859-1'; // Charset da mensagem (opcional)
 	$mail->Subject = $mail_subject;

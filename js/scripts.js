@@ -298,32 +298,14 @@ $("#map").gmap3({
           }
         }
       });
-	  
-/* ==============================================
-Back to Top
-=============================================== */
-
-$(window).scroll(function(){
-		if($(window).scrollTop() > 300){
-			$("#back-to-top").fadeIn(600);
-		} else{
-			$("#back-to-top").fadeOut(600);
-		}
-});
-	
-$('#back-to-top, .back-to-top').click(function() {
-    $('html, body').animate({ scrollTop:0 }, '1000');
-    return false;
-});
-
 /* ==============================================
 Backstretch - v2.0.4
 =============================================== */
     
 $(".home-fullscreen-slider").backstretch([
-	"admin/pages/produtos/categorias/slides/slide-1.jpg",
-	"admin/pages/produtos/categorias/slides/slide-2.jpg",
-	"admin/pages/produtos/categorias/slides/slide-3.jpg"
+	"admin/pages/fotos/categorias/slides/slide-1.jpg",
+	"admin/pages/fotos/categorias/slides/slide-2.jpg",
+	"admin/pages/fotos/categorias/slides/slide-3.jpg"
 ], {
 	fade: 750,
 	duration: 4000
@@ -341,7 +323,7 @@ Portfolio
 	// init cubeportfolio
     gridContainer.cubeportfolio({
 
-        defaultFilter: '.Sapatos',
+        defaultFilter: '.Festas',
 
         animationType: 'sequentially',
 

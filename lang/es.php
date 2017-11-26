@@ -5,6 +5,7 @@ define( 'MENU2', 'Fotos' );
 define( 'MENU4', 'Quem Somos' );
 define( 'MENU5', 'Eventos' );
 define( 'MENU6', 'Contato' );
+define( 'MENU7', 'Localização' );
 define( 'BUTTON_SLIDE1', 'ALGUMA COISA ' );
 define( 'BUTTON_SLIDE2', 'ALGUMA COISA ' );
 define( 'BUTTON_SLIDE3', 'ALGUMA COISA ' );

@@ -7,16 +7,16 @@ public static $EMP_instance;
 
  public static function EMP_getInstance() {
 	try{
- 	    //$user = "root";
-		$user = "u276131258_tenda";
+ 	    $user = "root";
+		//$user = "u276131258_tenda";
 
-        //$pass = ""; 
-		$pass = "tenda2017";
+        $pass = ""; 
+		//$pass = "tenda2017";
 
         $host = "localhost";
 
-        //$base = "tendadoencontro";
-		$base = "u276131258_tenda";
+        $base = "tendadoencontro";
+		//$base = "u276131258_tenda";
 
   	 if (!isset(self::$EMP_instance)) {
 

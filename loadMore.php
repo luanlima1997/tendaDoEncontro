@@ -22,7 +22,7 @@ $EMP_result = EMP_selectAllWhere("categorys","categorys",$category, $EMP_db);
  $_SESSION['category'] = $category;
     $aux = 0;
 foreach($EMP_result as $EMP_lineCategory) {
-        $EMP_dir = "admin/pages/produtos/categorias/";
+        $EMP_dir = "admin/pages/fotos/categorias/";
         $EMP_files = glob($EMP_dir.$EMP_lineCategory['categorys']."/*.*");
         ?>
 

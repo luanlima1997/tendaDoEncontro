@@ -27,8 +27,8 @@ foreach($EMP_result as $EMP_lineManager)
     if (isset($_POST['alterar'])) {
         try{
         $atualiza = $EMP_db->prepare('UPDATE managereua SET slide1 = :slide1, slide2 = :slide2, slide3 = :slide3, slideTitle1 = :slideTitle1, slideTitle2 = :slideTitle2, slideTitle3 = :slideTitle3,
-                                     slideSubtitle1 = :slideSubtitle1, slideSubtitle2 = :slideSubtitle2, slideSubtitle3 = :slideSubtitle3, phone = :phone, collectionTitle = :collectionTitle,
-                                     collectionSubtitle = :collectionSubtitle, collectionVideo = :collectionVideo, color = :color WHERE id = "1"');
+                                     slideSubtitle1 = :slideSubtitle1, slideSubtitle2 = :slideSubtitle2, slideSubtitle3 = :slideSubtitle3, phone = :phone, donationTitle = :donationTitle,
+                                     donationSubtitle = :donationSubtitle, color = :color WHERE id = "1"');
         $atualiza->bindParam(':slide1', $_POST['slide1']);
         $atualiza->bindParam(':slide2', $_POST['slide2']);
         $atualiza->bindParam(':slide3', $_POST['slide3']);
@@ -39,9 +39,8 @@ foreach($EMP_result as $EMP_lineManager)
         $atualiza->bindParam(':slideSubtitle2', $_POST['slideSubtitle2']);
         $atualiza->bindParam(':slideSubtitle3', $_POST['slideSubtitle3']);
         $atualiza->bindParam(':phone', $_POST['phone']);
-        $atualiza->bindParam(':collectionTitle', $_POST['collectionTitle']);
-        $atualiza->bindParam(':collectionSubtitle', $_POST['collectionSubtitle']);
-        $atualiza->bindParam(':collectionVideo', $_POST['collectionVideo']);
+        $atualiza->bindParam(':donationTitle', $_POST['donationTitle']);
+        $atualiza->bindParam(':donationSubtitle', $_POST['donationSubtitle']);
         $atualiza->bindParam(':color', $_POST['color']);
         $atualiza->execute();
         ?>
@@ -410,11 +409,9 @@ foreach($EMP_ResultCategoryTwo as $EMP_lineCategory){
                         <div class="panel-body">
                                 <div class="form-group">
                                             <label>Título - Doação</label>
-                                            <input class="form-control" name="collectionTitle" id="collectionTitle" value="<?php echo $EMP_lineManager['collectionTitle']?>" maxlength="50">
+                                            <input class="form-control" name="donationTitle" id="donationTitle" value="<?php echo $EMP_lineManager['donationTitle']?>" maxlength="50">
                                             <label>SubTítulo - Doação</label>
-                                            <input class="form-control" name="collectionSubtitle" id="collectionSubtitle" value="<?php echo $EMP_lineManager['collectionSubtitle']?>" maxlength="50">
-                                            <label>Vídeo - Vimeo <small>(somente o id)</small></label>
-                                            <input class="form-control" name="collectionVideo" id="collectionVideo" value="<?php echo $EMP_lineManager['collectionVideo']?>" maxlength="50">
+                                            <input class="form-control" name="donationSubtitle" id="donationSubtitle" value="<?php echo $EMP_lineManager['donationSubtitle']?>" maxlength="50">
                                             <label>Telefones</label>
                                             <input class="form-control" name="phone" id="phone" value="<?php echo $EMP_lineManager['phone']?>" maxlength="70">
                                             <label>Seleciona a cor</label>
