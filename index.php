@@ -97,7 +97,6 @@ foreach($EMP_result as $EMP_lineManager)
 		<!-- Skin Color -->
 		<link rel="stylesheet" href="css/<?php echo $EMP_lineManager['color']?>.css" id="color-skins"/>
 		<!-- End files CSS -->
-		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVHWCqf74nM-QB3OIGVGuMVpdYMog0qe8&callback=initMap" type="text/javascript"></script>
 		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script src="js/jquery.tagcloud.js"></script>
 		<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
@@ -472,6 +471,7 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 										<br>
 										<small class="white">
 											<?php echo BLOC1_DONATE_TEXT ?>
+
 										</small>
 										
 									</h4>
@@ -714,7 +714,8 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 									<textarea name="comments" cols="40" rows="5" maxlength="300" id="comments" placeholder="<?php echo PLACEHOLDER4 ?>"></textarea>
 								</div>
 								<div class="col-md-12 text-center">
-								<button type="submit" class="btn btn-primary btn-lg btn-responsive"><?php echo BUTTON_CONTACT ?> <i class="fa fa-rocket"></i></button>
+									<button type="submit" class="btn btn-primary btn-lg btn-responsive"><?php echo BUTTON_CONTACT ?> <i class="fa fa-rocket"></i></button>
+									<a type="button" href="https://www.aquirs.com.br/telefones-uteis-sao-leopoldo/" class="btn btn-primary btn-lg btn-responsive">Telefones Úteis <i class="fa fa-rocket"></i></a>
 								</div>
 							</fieldset>
 						</form>
@@ -796,6 +797,8 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 
 
 		<!-- Start jQuery Plugins -->
+		
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVHWCqf74nM-QB3OIGVGuMVpdYMog0qe8&callback=initMap" type="text/javascript"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/jquery.liquid-slider.js"></script>
@@ -814,7 +817,6 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 		<script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
 		<script src="js/jquery.mb.YTPlayer.js" type="text/javascript"></script>
 		<script src="js/jquery.backstretch.min.js"></script>
-		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 		<script type="text/javascript" src="js/gmap3.min.js"></script>
 		<script type="text/javascript" src="js/gmap3.js"></script>
 		<script src="js/scripts.js" type="text/javascript"></script>
@@ -824,7 +826,6 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 		<script type="text/javascript" src="js/jquery.nav.js"></script>
 		<script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
 		<script type="text/javascript" src="js/custom.js"></script>
-		
 		<script type="text/javascript">
 
 function formatar_mascara(src, mascara) {
@@ -848,6 +849,8 @@ var campo_temp
 } 
 
 </script>
+
+		
 <!-- End jQuery Plugins -->
 	</body>
 </html>
