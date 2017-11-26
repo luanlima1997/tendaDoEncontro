@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 06-Nov-2017 às 02:21
+-- Generation Time: 26-Nov-2017 às 13:49
 -- Versão do servidor: 10.1.13-MariaDB
 -- PHP Version: 7.0.5
 
@@ -31,6 +31,13 @@ CREATE TABLE `admin` (
   `email` varchar(100) DEFAULT NULL,
   `password` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `admin`
+--
+
+INSERT INTO `admin` (`id`, `email`, `password`) VALUES
+(1, 'tendadoencontro2017@gmail.com', '9bcbedea4ac741e2dcd60eff17b01d67864a88f0');
 
 -- --------------------------------------------------------
 
@@ -62,7 +69,9 @@ CREATE TABLE `categorys` (
 
 INSERT INTO `categorys` (`id`, `categorys`) VALUES
 (1, 'Festas'),
-(2, 'Reforços');
+(2, 'Reforcos'),
+(3, 'Brincadeiras'),
+(4, 'Cursos');
 
 -- --------------------------------------------------------
 
@@ -81,21 +90,19 @@ CREATE TABLE `managerbr` (
   `slideSubtitle1` varchar(100) DEFAULT NULL,
   `slideSubtitle2` varchar(100) DEFAULT NULL,
   `slideSubtitle3` varchar(100) DEFAULT NULL,
-  `phone` varchar(30) NOT NULL,
-  `collectionTitle` varchar(40) NOT NULL,
-  `collectionSubtitle` varchar(100) NOT NULL,
-  `collectionVideo` varchar(200) NOT NULL,
+  `phone` varchar(100) NOT NULL,
+  `donationTitle` varchar(100) NOT NULL,
+  `donationSubtitle` varchar(100) NOT NULL,
   `color` varchar(30) DEFAULT NULL,
-  `qtEmails` int(50) DEFAULT NULL,
-  `acessoLoja` int(11) DEFAULT NULL
+  `qtEmails` int(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Extraindo dados da tabela `managerbr`
 --
 
-INSERT INTO `managerbr` (`id`, `slide1`, `slide2`, `slide3`, `slideTitle1`, `slideTitle2`, `slideTitle3`, `slideSubtitle1`, `slideSubtitle2`, `slideSubtitle3`, `phone`, `collectionTitle`, `collectionSubtitle`, `collectionVideo`, `color`, `qtEmails`, `acessoLoja`) VALUES
-(1, 'CHAMADA1', 'CHAMADA2', 'CHAMADA3', 'Titulo1', 'Titulo2', 'Titulo3', 'subTitulo1', 'subTitulo2', 'subTitulo3', ' +55 (51) 99999-9999', 'Titulo Aqui', 'SubTitulo', 'id video ?', 'amarelo', 0, 0);
+INSERT INTO `managerbr` (`id`, `slide1`, `slide2`, `slide3`, `slideTitle1`, `slideTitle2`, `slideTitle3`, `slideSubtitle1`, `slideSubtitle2`, `slideSubtitle3`, `phone`, `donationTitle`, `donationSubtitle`, `color`, `qtEmails`) VALUES
+(1, 'Partilhe a vida conosco', 'Colabore Conosco', 'Conheça os nossos eventos', 'Estamos esperando você!', 'Ajude a Tenda do Encontro', 'Feitos para você', 'Conheça a nossa galeria de fotos', 'Juntos pela vida!', 'São mais de 5 eventos especiais para você!', '(51) 3091 - 2267 | (51) 99729 - 0399 | (51) 99955 - 8770', 'Contribui Conosco', 'Doações para: Associação Laura Vicuna - Agência: 4896 / Conta: 130000 12-2', 'azul', 0);
 
 -- --------------------------------------------------------
 
@@ -104,33 +111,7 @@ INSERT INTO `managerbr` (`id`, `slide1`, `slide2`, `slide3`, `slideTitle1`, `sli
 --
 
 CREATE TABLE `manageres` (
-  `id` int(11) NOT NULL DEFAULT '0',
-  `slide1` varchar(100) CHARACTER SET latin1 DEFAULT NULL,
-  `slide2` varchar(100) CHARACTER SET latin1 DEFAULT NULL,
-  `slide3` varchar(100) CHARACTER SET latin1 DEFAULT NULL,
-  `slideTitle1` varchar(100) CHARACTER SET latin1 DEFAULT NULL,
-  `slideTitle2` varchar(100) CHARACTER SET latin1 DEFAULT NULL,
-  `slideTitle3` varchar(100) CHARACTER SET latin1 DEFAULT NULL,
-  `slideSubtitle1` varchar(100) CHARACTER SET latin1 DEFAULT NULL,
-  `slideSubtitle2` varchar(100) CHARACTER SET latin1 DEFAULT NULL,
-  `slideSubtitle3` varchar(100) CHARACTER SET latin1 DEFAULT NULL,
-  `phone` varchar(30) CHARACTER SET latin1 NOT NULL,
-  `collectionTitle` varchar(40) CHARACTER SET latin1 NOT NULL,
-  `collectionSubtitle` varchar(100) CHARACTER SET latin1 NOT NULL,
-  `collectionVideo` varchar(200) CHARACTER SET latin1 NOT NULL,
-  `color` varchar(30) CHARACTER SET latin1 DEFAULT NULL,
-  `qtEmails` int(50) DEFAULT NULL,
-  `acessoLoja` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- Estrutura da tabela `managereua`
---
-
-CREATE TABLE `managereua` (
-  `id` int(11) NOT NULL DEFAULT '0',
+  `id` int(11) NOT NULL,
   `slide1` varchar(100) DEFAULT NULL,
   `slide2` varchar(100) DEFAULT NULL,
   `slide3` varchar(100) DEFAULT NULL,
@@ -140,14 +121,50 @@ CREATE TABLE `managereua` (
   `slideSubtitle1` varchar(100) DEFAULT NULL,
   `slideSubtitle2` varchar(100) DEFAULT NULL,
   `slideSubtitle3` varchar(100) DEFAULT NULL,
-  `phone` varchar(30) NOT NULL,
-  `collectionTitle` varchar(40) NOT NULL,
-  `collectionSubtitle` varchar(100) NOT NULL,
-  `collectionVideo` varchar(200) NOT NULL,
+  `phone` varchar(100) NOT NULL,
+  `donationTitle` varchar(100) NOT NULL,
+  `donationSubtitle` varchar(100) NOT NULL,
   `color` varchar(30) DEFAULT NULL,
-  `qtEmails` int(50) DEFAULT NULL,
-  `acessoLoja` int(11) DEFAULT NULL
+  `qtEmails` int(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `manageres`
+--
+
+INSERT INTO `manageres` (`id`, `slide1`, `slide2`, `slide3`, `slideTitle1`, `slideTitle2`, `slideTitle3`, `slideSubtitle1`, `slideSubtitle2`, `slideSubtitle3`, `phone`, `donationTitle`, `donationSubtitle`, `color`, `qtEmails`) VALUES
+(1, 'CHAMADA1', 'CHAMADA2', 'CHAMADA3', 'Titulo1', 'Titulo2', 'Titulo3', 'subTitulo1', 'subTitulo2', 'subTitulo3', ' +55 (51) 99999-9999', 'Titulo Aqui', 'SubTitulo', 'amarelo', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `managereua`
+--
+
+CREATE TABLE `managereua` (
+  `id` int(11) NOT NULL,
+  `slide1` varchar(100) DEFAULT NULL,
+  `slide2` varchar(100) DEFAULT NULL,
+  `slide3` varchar(100) DEFAULT NULL,
+  `slideTitle1` varchar(100) DEFAULT NULL,
+  `slideTitle2` varchar(100) DEFAULT NULL,
+  `slideTitle3` varchar(100) DEFAULT NULL,
+  `slideSubtitle1` varchar(100) DEFAULT NULL,
+  `slideSubtitle2` varchar(100) DEFAULT NULL,
+  `slideSubtitle3` varchar(100) DEFAULT NULL,
+  `phone` varchar(100) NOT NULL,
+  `donationTitle` varchar(100) NOT NULL,
+  `donationSubtitle` varchar(100) NOT NULL,
+  `color` varchar(30) DEFAULT NULL,
+  `qtEmails` int(50) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `managereua`
+--
+
+INSERT INTO `managereua` (`id`, `slide1`, `slide2`, `slide3`, `slideTitle1`, `slideTitle2`, `slideTitle3`, `slideSubtitle1`, `slideSubtitle2`, `slideSubtitle3`, `phone`, `donationTitle`, `donationSubtitle`, `color`, `qtEmails`) VALUES
+(1, 'CHAMADA1', 'CHAMADA2', 'CHAMADA3', 'Titulo1', 'Titulo2', 'Titulo3', 'subTitulo1', 'subTitulo2', 'subTitulo3', ' +55 (51) 99999-9999', 'Titulo Aqui', 'SubTitulo', 'amarelo', 0);
 
 -- --------------------------------------------------------
 
@@ -190,6 +207,18 @@ ALTER TABLE `managerbr`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `manageres`
+--
+ALTER TABLE `manageres`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `managereua`
+--
+ALTER TABLE `managereua`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `notes`
 --
 ALTER TABLE `notes`
@@ -203,7 +232,7 @@ ALTER TABLE `notes`
 -- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `catalog`
 --
@@ -213,11 +242,21 @@ ALTER TABLE `catalog`
 -- AUTO_INCREMENT for table `categorys`
 --
 ALTER TABLE `categorys`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `managerbr`
 --
 ALTER TABLE `managerbr`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `manageres`
+--
+ALTER TABLE `manageres`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `managereua`
+--
+ALTER TABLE `managereua`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `notes`
