@@ -2044,3 +2044,15 @@ border: 0 !important;
 	font-size: 25px; 
 	margin-right: 10px;
 }
+
+.logo-comunity{
+	margin-left: 40%; 
+	margin-bottom:30px
+}
+
+@media (max-width: 475px) {
+    .logo-comunity{
+	margin-left: 1%; 
+	margin-bottom:30px
+	}
+} 
