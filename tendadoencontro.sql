@@ -102,7 +102,7 @@ CREATE TABLE `managerbr` (
 --
 
 INSERT INTO `managerbr` (`id`, `slide1`, `slide2`, `slide3`, `slideTitle1`, `slideTitle2`, `slideTitle3`, `slideSubtitle1`, `slideSubtitle2`, `slideSubtitle3`, `phone`, `donationTitle`, `donationSubtitle`, `color`, `qtEmails`) VALUES
-(1, 'Partilhe a vida conosco', 'Colabore Conosco', 'Conheça os nossos eventos', 'Estamos esperando você!', 'Ajude a Tenda do Encontro', 'Feitos para você', 'Conheça a nossa galeria de fotos', 'Juntos pela vida!', 'São mais de 5 eventos especiais para você!', '(51) 3091 - 2267 | (51) 99729 - 0399 | (51) 99955 - 8770', 'Contribui Conosco', 'Doações para: Associação Laura Vicuna - Agência: 4896 / Conta: 130000 12-2', 'azul', 0);
+(1, 'Partilhe a vida conosco', 'Colabore Conosco', 'Conheça os nossos eventos', 'Estamos esperando você!', 'Ajude a Tenda do Encontro', 'Feitos para você', 'Conheça a nossa galeria de fotos', 'Juntos pela vida!', 'São mais de 5 eventos especiais para você!', '(51) 3091 - 2267 | (51) 99729 - 0399 | (51) 99955 - 8770', 'Contribui Conosco', 'Doações: Organização Religiosa Missionários de Cristo Ressucitado- Agência:4896/ Conta:130000 12-2', 'azul', 0);
 
 -- --------------------------------------------------------
 
