@@ -103,6 +103,8 @@ foreach($EMP_result as $EMP_lineManager)
 		<link href="css/jqcloud.css" rel="stylesheet">
 		<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVHWCqf74nM-QB3OIGVGuMVpdYMog0qe8&callback=initMap" type="text/javascript"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
 	</head>
 	<body>
@@ -380,7 +382,10 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 							<?php echo SUBTITLE2_3 ?>
 						</p>
 					</div>
-					<img src="img/comunidade-logo.png" alt="" style="margin-left: 40%; margin-bottom:30px">
+					<img src="img/comunidade-logo.png" alt="" class="logo-comunity" style="">
+					<a href="https://www.mundomaislimpo.org.br/" target="_blank">
+						<img src="img/mundo-mais-limpo.jpg" class="mundo-mais-limpo-logo" alt="">
+					</a>
 					<div class="row">
 						<div class="col-md-4 col-sm-6">
 							<div class="about-row">
@@ -865,8 +870,7 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 
 		<!-- Start jQuery Plugins -->
 		
-		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVHWCqf74nM-QB3OIGVGuMVpdYMog0qe8&callback=initMap" type="text/javascript"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/jquery.liquid-slider.js"></script>
 		<script src="js/jquery.stellar.js" type="text/javascript"></script>
