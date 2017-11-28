@@ -1,6 +1,6 @@
 $("#tagcloud a").tagcloud({
-	size: {start: 12, end: 42, unit: "px"},
-	color: {start: '#00addf', end: '#ffff00'}
+	size: {start: 14, end: 43, unit: "px"},
+	color: {start: '#ffff00', end: '#00addf'}
 });
 
 
