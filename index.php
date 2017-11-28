@@ -105,6 +105,7 @@ foreach($EMP_result as $EMP_lineManager)
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVHWCqf74nM-QB3OIGVGuMVpdYMog0qe8&callback=initMap" type="text/javascript"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/jquery.tagcloud.js"></script>
 
 	</head>
 	<body>
@@ -449,69 +450,38 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 						</div>
 					</div>
 				</div>
+				
 				<div class="row">
 					<div class="col-md-3 col-sm-6"></div>
 					<div class="col-md-6 col-sm-6">
-						  <div class="bs-example">
-							<div id="demo-simple" class="demo"></div>
+						<div id="tagcloud">
+							<a href="#" rel="14">Empoderamento</a>
+							<a href="#" rel="11">Esperança</a>
+							<a href="#" rel="23">Solidariedade</a>
+							<a href="#" rel="14">Acompanhamento</a>
+							<a href="#" rel="15">Presença</a>
+							<a href="#" rel="12">Construção</a>
+							<a href="#" rel="14">Cidadania</a>
+							<a href="#" rel="17">Comunidade</a>
+							<a href="#" rel="20">Familiaridade</a>
+							<a href="#" rel="10">Conhecimento</a>
+							<a href="#" rel="21">Educação</a>
+							<a href="#" rel="12">Protagonismo</a>
+							<a href="#" rel="23">Celebração</a>
+							<a href="#" rel="13">Benefícios</a>
+							<a href="#" rel="24">Pessoas</a>
+							<a href="#" rel="15">Participação</a>
+							<a href="#" rel="12">Trabalho</a>
+							<a href="#" rel="22">Amizade</a>
+							<a href="#" rel="10">Brincadeiras</a>
+							<a href="#" rel="16">Cooperação</a>
+							<a href="#" rel="11">Jogos</a>
 						  </div>
+					<script type="text/javascript">
 						
-
-
-						<script>
-											var words = [
-							{text: "Lorem", weight: 13},
-							{text: "Ipsum", weight: 10.5},
-							{text: "Dolor", weight: 9.4},
-							{text: "Sit", weight: 8},
-							{text: "Amet", weight: 6.2},
-							{text: "Consectetur", weight: 5},
-							{text: "Adipiscing", weight: 5},
-							{text: "Elit", weight: 5},
-							{text: "Nam et", weight: 5},
-							{text: "Leo", weight: 4},
-							{text: "Sapien", weight: 4},
-							{text: "Pellentesque", weight: 3},
-							{text: "habitant", weight: 3},
-							{text: "morbi", weight: 3},
-							{text: "tristisque", weight: 3},
-							{text: "senectus", weight: 3},
-							{text: "et netus", weight: 3},
-							{text: "et malesuada", weight: 3},
-							{text: "fames", weight: 2},
-							{text: "ac turpis", weight: 2},
-							{text: "egestas", weight: 2},
-							{text: "Aenean", weight: 2},
-							{text: "vestibulum", weight: 2},
-							{text: "elit", weight: 2},
-							{text: "sit amet", weight: 2},
-							{text: "metus", weight: 2},
-							{text: "adipiscing", weight: 2},
-							{text: "ut ultrices", weight: 2},
-							{text: "justo", weight: 1},
-							{text: "dictum", weight: 1},
-							{text: "Ut et leo", weight: 1},
-							{text: "metus", weight: 1},
-							{text: "at molestie", weight: 1},
-							{text: "purus", weight: 1},
-							{text: "Curabitur", weight: 1},
-							{text: "diam", weight: 1},
-							{text: "dui", weight: 1},
-							{text: "ullamcorper", weight: 1},
-							{text: "id vuluptate ut", weight: 1},
-							{text: "mattis", weight: 1},
-							{text: "et nulla", weight: 1},
-							{text: "Sed", weight: 1}
-						];
-	
-	
-						$( window ).load(function() {
-						  // Run code
-						  $('#demo-simple').jQCloud(words);
-						});
-
-						</script>
-					
+					</script>
+					</div>
+				</div>
 					
 					</div>
 				</div>
@@ -787,7 +757,7 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 									<textarea name="comments" cols="40" rows="5" maxlength="300" id="comments" placeholder="<?php echo PLACEHOLDER4 ?>"></textarea>
 								</div>
 								<div class="col-md-12 text-center">
-									<button type="submit" class="btn btn-primary btn-lg btn-responsive"><?php echo BUTTON_CONTACT ?> <i class="fa fa-rocket"></i></button>
+									<button type="submit" class="btn btn-primary btn-lg btn-responsive"><?php echo BUTTON_CONTACT ?> <i class="fa fa-phone"></i></button>
 									<a type="button" href="https://www.aquirs.com.br/telefones-uteis-sao-leopoldo/" class="btn btn-primary btn-lg btn-responsive">Telefones Úteis <i class="fa fa-rocket"></i></a>
 								</div>
 							</fieldset>
