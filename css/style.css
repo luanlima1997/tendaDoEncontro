@@ -2068,3 +2068,13 @@ border: 0 !important;
 	margin-left: 35%; 
 	}
 } 
+
+@media (max-width: 768px) {
+    .row-events{
+	margin-left: 25%; 
+	margin-right: 0%; 
+	}
+	.events-slots{
+		width: 60%;
+	}
+} 

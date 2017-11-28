@@ -390,7 +390,7 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 						<div class="col-md-4 col-sm-6">
 							<div class="about-row">
 								<div class="about-icon">
-									<i class="fa fa-eye ion-3x highlight">
+									<i class="fa fa-eye ion-3x highlight" style="color:red;">
 									</i>
 								</div>
 								<div class="about-info">
@@ -430,7 +430,7 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 						<div class="col-md-4 col-sm-6">
 							<div class="about-row">
 								<div class="about-icon">
-									<i class="fa fa-users ion-3x highlight">
+									<i class="fa fa-users ion-3x highlight" style="color:yellow;">
 									</i>
 								</div>
 								<div class="about-info">
