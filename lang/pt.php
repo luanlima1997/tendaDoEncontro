@@ -38,7 +38,7 @@ define( 'BLOC1_TEXT', '' );
 define( 'BLOC2_TEXT', '' );
 define( 'BLOC3_TEXT', '' );
 define( 'BLOC1_DONATE_TITLE', 'Queres Ajudar?' );
-define( 'BLOC1_DONATE_TEXT', 'Parceirias e atividades curriculares!<br>Participa com o seu tempo colaborando conosco.<br>Entre em contato pelo email: <strong>tendadoencontro2017@gmail.com</strong><br> Pelo telefone: (51)3091 - 2267 <br>WhatsApp Daniela: +55 51 99955 - 8770 <br>WhatsApp Eugênia: +55 51 99729 - 0399 ' );
+define( 'BLOC1_DONATE_TEXT', 'Parceirias e atividades curriculares!<br>Participa com o seu tempo colaborando conosco.<br>Entre em contato pelo email: <strong>tendadoencontro2017@gmail.com</strong><br> Pelo telefone: (51)3091 - 2267 <br>WhatsApp Mariana: +55 51 99955 - 8770 <br>WhatsApp Eugênia: +55 51 99729 - 0399 ' );
 define( 'BLOC2_DONATE_TITLE', 'Queres Doar?' );
 define( 'BLOC2_DONATE_TEXT', 'Ajuda econômica:<br>Colabore com qualquer quantia em dinheiro e ajude<br>o nosso trabalho a continuar.<br> Colabore também com alimentos, roupas, material de construção, material escolar e brinquedos para as famílias necessitadas. ' );
 
