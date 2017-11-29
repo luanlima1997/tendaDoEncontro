@@ -757,8 +757,8 @@ foreach($EMP_resultTwo as $EMP_lineCategoryTwo) {
 									<textarea name="comments" cols="40" rows="5" maxlength="300" id="comments" placeholder="<?php echo PLACEHOLDER4 ?>"></textarea>
 								</div>
 								<div class="col-md-12 text-center">
-									<button type="submit" class="btn btn-primary btn-lg btn-responsive"><?php echo BUTTON_CONTACT ?> <i class="fa fa-phone"></i></button>
-									<a type="button" href="https://www.aquirs.com.br/telefones-uteis-sao-leopoldo/" class="btn btn-primary btn-lg btn-responsive">Telefones Úteis <i class="fa fa-rocket"></i></a>
+									<button type="submit" class="btn btn-primary btn-lg btn-responsive"><?php echo BUTTON_CONTACT ?> <i class="fa fa-rocket"></i></button>
+									<a type="button" href="https://www.aquirs.com.br/telefones-uteis-sao-leopoldo/" class="btn btn-primary btn-lg btn-responsive">Telefones Úteis <i class="fa fa-phone"></i></a>
 								</div>
 							</fieldset>
 						</form>
